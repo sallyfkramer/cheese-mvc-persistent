@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title>Category</title>
+</head>
+<body>
+<div class="container body-content">
+        <ul >
+
+<!--//TODO make each category a link to cheese/index?id= ...//-->
+            <li th:each="category : ${categories}" th:text="${category.name}" ></li>
+            <!--<li th:each="category : ${categories}">category.name</li>-->
+
+        </ul>
+</div>
+
+<div>
+    <a href="cheese/category/add">Add Category</a>
+</div>
+</body>
+</html>
